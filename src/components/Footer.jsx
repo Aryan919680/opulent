@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Footer() {
 	const [year, setYear] = useState(new Date().getFullYear());
@@ -24,15 +24,16 @@ export default function Footer() {
 					<strong className="text-xl text-white sm:text-xl">
 						Let&apos;s Talk about project!
 					</strong>
-					<a
+					<Link
+					to='/get-in-touch'
 						className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
 					>
-						<button onClick={openForm}>
+						
 						<span className="relative text-base font-semibold text-primary">
 							Get in touch
 						</span>	
-						</button>
-					</a>
+						
+					</Link>
 				</div>
 
 				{/* Footer Links */}
