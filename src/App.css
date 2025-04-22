@@ -1,0 +1,16 @@
+html {
+	font-family: Urbanist, sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+}
+
+#toggle_nav:checked ~ div #hamburger #line {
+	transform: rotate(45deg) translateY(6px);
+}
+
+#toggle_nav:checked ~ div #hamburger #line2 {
+	transform: rotate(-45deg) translateY(-4px);
+}
